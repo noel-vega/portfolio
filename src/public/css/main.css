@@ -45,15 +45,12 @@ section.hero {
     margin-bottom: 100px;
   }
 
-
   .bi-arrow-down {
     display: inline-block;
     font-size: 2rem;
     animation: gentle-bounce 2s ease-in-out infinite;
     cursor: pointer;
   }
-
-    /* transition: opacity 0.3s ease, color 0.3s ease; */
 }
 
 
