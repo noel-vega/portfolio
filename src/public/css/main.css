@@ -10,6 +10,11 @@ body {
   min-height: 100vh;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 @keyframes gentle-bounce {
   0%, 100% {
     transform: translateY(0);
@@ -51,6 +56,18 @@ section.hero {
     animation: gentle-bounce 2s ease-in-out infinite;
     cursor: pointer;
   }
+}
+
+section#experience {
+  border: 2px solid blue;
+
+  h2 {
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+
+
 }
 
 

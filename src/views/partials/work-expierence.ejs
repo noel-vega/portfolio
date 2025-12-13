@@ -1,24 +1,26 @@
-<section id="expierence">
-  <h2>Work Experience</h2>
+<section id="experience" class="container">
+  <h2 class="title">Work Experience</h2>
   <% workExperience.forEach(job => { %>
-    <div>
-      <h3><%= job.role %></h3>
-      <p><%= job.company.name %></p>
-      <p><%= job.company.industry %></p>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><%= job.role %></h3>
+        <h4 class="card-subtitle"><%= job.company.name %></h4>
+        <h4 class="card-subtitle"><%= job.company.industry %></h4>
 
-      <div>
-        <p>Tech Stack</p>
-        <ul>
-          <% job.techStack.forEach(tech => { %>
-            <li><%= tech %></li>
-          <% }) %>
-        </ul>
+        <div>
+          <p>Tech Stack</p>
+          <ul class="list-group list-group-horizontal">
+            <% job.techStack.forEach(tech => { %>
+              <li class="list-group-item"><%= tech %></li>
+            <% }) %>
+          </ul>
 
-        <ul>
-          <% job.descriptions.forEach(description => { %>
-            <li><%= description %></li>
-          <% }) %>
-        </ul>
+          <ul>
+            <% job.descriptions.forEach(description => { %>
+              <li><%= description %></li>
+            <% }) %>
+          </ul>
+        </div>
       </div>
     </div>
   <% }) %>
