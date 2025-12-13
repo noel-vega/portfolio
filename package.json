@@ -12,12 +12,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
     "bootstrap-icons": "^1.13.1",
     "ejs": "^3.1.10",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
+    "daisyui": "^5.5.13",
     "nodemon": "^3.1.11",
     "tsx": "^4.21.0"
   }
