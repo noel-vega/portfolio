@@ -1,5 +1,5 @@
-<section id="experience" class="container">
-  <h2 class="title">Work Experience</h2>
+<section id="experience" class="container py-6">
+  <h2 class="text-center text-xl font-medium">Work Experience</h2>
   <% workExperience.forEach(job => { %>
     <div class="card">
       <div class="card-body">
@@ -16,12 +16,12 @@
         </div>
 
         <h6>Tech Stack</h6>
-        <ul class="tech-stack">
+        <ul class="flex gap-1 flex-wrap">
           <% job.techStack.forEach(tech => { %>
             <li class="badge text-bg-secondary"><%= tech %></li>
           <% }) %>
         </ul>
-        <ul>
+        <ul class="space-y-2">
           <% job.descriptions.forEach(description => { %>
             <li><%= description %></li>
           <% }) %>
