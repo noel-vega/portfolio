@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
     workExperience: [
       {
         company: {
-          name: "Revia",
+          name: "Revia.ai",
           industry: "Legal Tech"
         },
         techStack: ["Azure", "C#", "ASP.NET", "Typescript", "React", "Tanstack Router", "Docker", "Terraform", "SQL Server"],
@@ -38,8 +38,9 @@ app.get('/', (req, res) => {
         ],
       },
       {
+        role: "Software Engineer",
         company: {
-          name: "Revia",
+          name: "Revia.ai",
           industry: "Legal Tech"
         },
         techStack: ["Azure", "C#", "ASP.NET", "Typescript", "React", "Tanstack Router", "Docker", "Terraform", "SQL Server"],
