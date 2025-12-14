@@ -17,9 +17,7 @@ app.use(express.static(join(__dirname, 'public')))
 
 app.get('/', (req, res) => {
   res.render('index', {
-    title: 'My app',
-    name: 'world',
-    items: ['apple', 'bannana'],
+    title: 'Noel Vega',
     workExperience: [
       {
         company: {
