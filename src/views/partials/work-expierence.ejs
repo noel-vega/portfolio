@@ -1,33 +1,37 @@
-<section id="experience" class="container py-6">
-  <h2 class="text-center text-xl font-medium">Work Experience</h2>
-  <% workExperience.forEach(job => { %>
-    <div class="card">
-      <div class="card-body">
-        <div>
-          <h4 class="card-title fw-bold">
-            <%= job.role %>
-          </h4>
-          <h5 class="flex gap-2">
-            <i class="bi bi-suitcase-lg"></i> 
-            <%= job.company.name %>
-          </h5>
-          <h6 class="space-x-2">
-            <i class="bi bi-building"></i> 
-            <%= job.company.industry %>
-          </h6>
-        </div>
+<section id="experience" class="container py-20 mx-auto">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-center text-2xl font-medium mb-12">Work Experience</h2>
+    <ol class="space-y-8">
+      <% workExperience.forEach(job => { %>
+        <li class="card">
+          <div class="card-body">
+            <div>
+              <h4 class="card-title fw-bold">
+                <%= job.role %>
+              </h4>
+              <h5 class="flex gap-2">
+                <i class="bi bi-suitcase-lg"></i> 
+                <%= job.company.name %>
+              </h5>
+              <h6 class="space-x-2">
+                <i class="bi bi-building"></i> 
+                <%= job.company.industry %>
+              </h6>
+            </div>
 
-        <ul class="flex gap-1 flex-wrap">
-          <% job.techStack.forEach(tech => { %>
-            <li class="badge text-xs"><%= tech %></li>
-          <% }) %>
-        </ul>
-        <ul class="space-y-2">
-          <% job.descriptions.forEach(description => { %>
-            <li><%= description %></li>
-          <% }) %>
-        </ul>
-      </div>
-    </div>
-  <% }) %>
+            <ul class="flex gap-1 flex-wrap py-2">
+              <% job.techStack.forEach(tech => { %>
+                <li class="badge badge-outline text-xs"><%= tech %></li>
+              <% }) %>
+            </ul>
+            <ul class="space-y-2 list-disc ml-4">
+              <% job.descriptions.forEach(description => { %>
+                <li><%= description %></li>
+              <% }) %>
+            </ul>
+          </div>
+        </li>
+      <% }) %>
+    </ol>
+  </div>
 </section>
