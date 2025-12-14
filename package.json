@@ -9,7 +9,7 @@
     "build": "sh build.sh",
     "start": "node dist/index.js",
     "dev": "nodemon --watch src --ext ts,ejs,js,css --exec tsx src/index.ts",
-    "tw": "tsc && npx @tailwindcss/cli -i ./src/input.css -o ./dist/public/css/main.css --watch"
+    "tw": "npx @tailwindcss/cli -i ./src/input.css -o ./src/public/css/main.css --watch"
   },
   "keywords": [],
   "author": "",
