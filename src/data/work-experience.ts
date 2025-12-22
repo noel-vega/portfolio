@@ -81,3 +81,5 @@ export const workExperience: WorkExperience[] = [
     ],
   },
 ]
+
+export const skills = ["Typescript", "React", "C#", "Docker", "Azure"]
