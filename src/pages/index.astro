@@ -28,17 +28,23 @@ const projects = [
 	},
 ];
 
-const skills = [
+const frontendSkills = [
 	'TypeScript',
 	'React',
-	'Next.js',
-	'Astro',
+  'Storybook',
+  'Tanstack Router',
+  'Tanstack Query',
+  'Tasnstack Table',
+  'Shadcn',
+];
+
+const backendSkills = [
 	'Node.js',
-	'Python',
+	'Golang',
 	'Postgres',
 	'AWS',
+  'Azure',
 	'Docker',
-	'Tailwind CSS',
 ];
 ---
 
@@ -51,7 +57,7 @@ const skills = [
 		<Header />
 		<main>
 			<section class="hero">
-				<p class="eyebrow">Web Developer</p>
+				<p class="eyebrow">Fullstack Software Engineer</p>
 				<h1>
 					Hi, I'm <span class="accent">Noel Vega</span>.<br />
 					I build fast, thoughtful web experiences.
@@ -96,9 +102,20 @@ const skills = [
 					<h2>Stack &amp; tools</h2>
 					<p>Technologies I reach for most often.</p>
 				</header>
-				<ul class="skills">
-					{skills.map((skill) => <li>{skill}</li>)}
-				</ul>
+				<div class="skill-groups">
+					<div class="skill-group">
+						<h3>Frontend</h3>
+						<ul class="skills">
+							{frontendSkills.map((skill) => <li>{skill}</li>)}
+						</ul>
+					</div>
+					<div class="skill-group">
+						<h3>Backend</h3>
+						<ul class="skills">
+							{backendSkills.map((skill) => <li>{skill}</li>)}
+						</ul>
+					</div>
+				</div>
 			</section>
 
 			<section class="section contact">
@@ -274,6 +291,21 @@ const skills = [
 		border-radius: 999px;
 		background: rgb(var(--gray-light));
 		color: rgb(var(--gray-dark));
+	}
+
+	.skill-groups {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 2em;
+	}
+
+	.skill-group h3 {
+		font-size: 0.78em;
+		text-transform: uppercase;
+		letter-spacing: 0.18em;
+		font-weight: 600;
+		color: rgb(var(--gray));
+		margin: 0 0 1em;
 	}
 
 	.skills {
